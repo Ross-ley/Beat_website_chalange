@@ -1,0 +1,496 @@
+/* mass selects */
+
+body {
+    padding-top: 20px;
+    font-size: 16px;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+
+}
+
+div nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-right: 1px black solid;
+    border-left: 1px solid black;
+    padding: 10px;
+    font-size: 16;
+}
+div nav ul li ul li a {
+    font-weight: 600;
+    border-right: none;
+    border-left: none;
+    padding: 0;
+    font-size: 14;
+}
+footer ul {
+    display: block;
+    color: white;    
+}
+footer {
+    padding: 20px;
+    color: white;
+}
+a {
+    width: 514px;
+}
+h4 {
+    margin-top: 0;
+}
+li a{
+    width: 300px;
+}
+
+/*---------------*/
+/* class selecter */
+
+
+.over_oragen{
+    color: white;
+    position: static;
+    top: -62px;
+    left: -1200px;
+    text-decoration: none;
+    position: relative;
+}
+.about ul li a,
+.trust ul li a,
+.website ul li a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: -40px;
+    line-height: 15px;
+}
+.about ul li a:hover,
+.trust ul li a:hover,
+.website ul li a:hover{
+    color: rgb(160, 157, 157);
+}
+.about ul li a::before,
+.trust ul li a::before,
+.website ul li a::before{
+    content: "\00BB";
+    padding: 6px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.container_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container_body{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-self: center;
+}
+.searchbar{
+   width: 80%;
+   height: 5%;
+   border-radius: 25px;
+}
+.fa-life-ring{
+    transform: rotate(45deg);
+    padding: 10px;
+}
+.helpline,
+.youthline,
+.studentline{
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    padding: 20px;
+    margin: 0;
+    width: 25%;
+    height: 50px;
+}
+.fa-life-ring,
+.fa-phone,
+.fa-graduation-cap {
+    background-color: #412148;
+    border-radius: 25px;
+    color: white;
+    padding: 10px;
+    margin-right: 20px;
+}
+.nav_bar{
+    display: flex;
+    justify-content: center;
+    z-index: 5;
+}
+.nav-bar ~ ul {
+    text-transform: uppercase;
+
+}
+.footer,
+.nav_bar{
+    background-color: #412148;
+}
+ul li ul {
+    display: none;
+}
+.newsletter,
+.about,
+.trust,
+.website {
+    width: 25%;
+
+}
+.con_foot {
+    width: 60%;
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.btn{
+    color: white;
+    background-color: #ec6708;
+    width: 50%;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_2{
+    color: white;
+    background-color: #ec6708;
+    border-color: #ec6708; 
+    width: 30%;
+    height: 40px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn_2 p {
+    position: relative;
+    top: -2px;
+    cursor: pointer;
+}
+.fab{
+    color: white;
+}
+.fab:hover{
+    color: rgb(160, 157, 157);
+}
+.header_bar{
+    width: 60%;
+    display: flex;
+    justify-content: center
+}
+.search{
+    border: 0;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    right: 28px;
+}
+.fit{
+    width: 100%;
+    display: flex;
+    padding-right: 10px;
+    align-items: center
+}
+.background_image{
+    background-image: url(https://www.beateatingdisorders.org.uk/uploads/banner/58/04-03-2019-10-06-10-ksral.jpg);
+    box-shadow: -200px 0px 300px black inset;
+}
+.background-image{
+    background-image: url(https://www.beateatingdisorders.org.uk/uploads/banner/58/04-03-2019-10-06-15-dvmfq.jpg);
+    box-shadow: 200px 0px 300px black inset;
+}
+.background-image,
+.background_image{
+    background-size: 100% 415px;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 415px;
+    margin-bottom: 70px;
+}
+#background {
+    display: flex;
+}
+.infodiv,
+.infodiv2{
+    width: 50%;
+    height: 220px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.infodiv{
+    background-image: url(https://www.beateatingdisorders.org.uk/uploads/pages/1/home-zYRT.png);
+}
+.infodiv2{
+    background-image: url(https://www.beateatingdisorders.org.uk/uploads/pages/1/home-FS02.jpg);
+    position: relative;
+    right: 33px;
+    width: 365px;
+}
+.infodivcon{
+    display: flex;
+}
+.information{
+    background-color:#972585;
+    width: 70%;
+}
+.informations{
+    background-color: #412148;
+    width: 343px;
+    position: relative;
+    bottom: 220px;
+    left: 205px;
+    height: 220px;
+}
+
+.information,
+.informations{
+    color: white;
+}
+.int{
+    border: 1px solid black;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
+    margin-bottom: 30px;
+    height: 220px;
+    overflow: hidden;
+}
+.intle{
+    border: 1px solid black;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+    /* display: flex; */
+    margin-bottom: 30px;
+    height: 220px;
+    overflow: hidden;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: relative;
+    top: 45px;
+    left: 0px;
+}
+.profile_cover{
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.user{
+    width: 50%;
+    display: flex;
+}
+.info_head{
+    color: #412148;
+    text-decoration: none;
+}
+.info_head:hover{
+    text-decoration: underline;
+}
+.slick-dots .slick-active button::after {
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 0px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.slick{
+    border: 1px solid black;
+    width: 33.3%;
+    height: 300px;
+}
+.slick-boxs{
+    display: flex;
+}
+.user-row{
+    display: flex;
+    flex-direction: column;
+}
+.head-of-overlap{
+    position: relative;
+    top: -430px;
+    left: 150px;
+    width: 420px;
+}
+.text-of-overlap{
+    position: relative;
+    top: -425px;
+    left: 95px;
+    width: 363px;
+}
+.btn-of-overlap{
+    position: relative;
+    top: -215px;
+    left: 155px;
+    background-color: white;
+    color: #972585;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 215px;
+    height: 40px;
+    border-radius: 25px;
+}
+.btn_info{
+    border: none;
+    background-color: white;
+    border-radius: 25px;
+    height: 50px;
+    position: relative;
+    left: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+}
+.shape{
+    width: 80px;
+}
+.bottem_cover{
+    background-color:#db092e ;
+    height: 230px;
+}
+.bottem_layer{
+    background-color: #972585;
+    height: 230px;
+}
+.bottem_box{
+    background-color: #ec6708;
+    height: 230px;
+}
+.slick{
+    height: 500px;
+}
+.nav_bar nav > ul li ul li a::before{
+    content: "\00BB"
+}
+.highlight{
+    color: #412148;
+    font-weight: bold;
+}
+.overlay{
+    width: 1px;
+    height: 1px;
+}
+
+/* jqueary code */
+#cookie{
+    background-color: #972585;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
+}
+#cookies{
+    height: 50px;
+    width: 200px;
+    border: none;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 25px;
+    font-size: 20px;
+}
+.small{
+    display: none;
+}
+
+/* test code section */
+
+/*---------------------*/
+/* dropdown code */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+/*---*/
+
+/* media */
+
+@media (max-width: 1200px) {
+    .over_oragen {
+        left:-870px;
+
+    }
+    .searchbar{
+        width: 100px;
+    }
+    .search{
+        right: -68px;
+        top: -27px;
+    }
+    .infodivcon{
+        flex-direction: column;
+    }
+    .container_body{
+        width: 80%;
+    }
+    .informations{
+        width:100%;
+    }
+    .con_foot{
+        width: 80%;
+    }
+    .about,
+    .trust,
+    .website{
+        width: 33.3%
+    }
+    .newsletter{
+    
+    }
+}
+@media (max-width: 980px) {
+
+}
+
+@media (max-width: 750px) {
+
+}
+/*----*/
