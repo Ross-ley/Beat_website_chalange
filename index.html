@@ -3,8 +3,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
@@ -14,7 +14,16 @@
 <body>
     <div id="1"><!-- target for a cookie alert -->
     </div>
+    <!-- side menu  -->
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav(),myFunction('.bars') ">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
     <!-- header -->
+    <div id="main">
         <div class="container_header">
             <header class="header_bar">
                 <img src="https://www.beateatingdisorders.org.uk/assets/images/f-logo.jpg" alt="logo">
@@ -35,11 +44,12 @@
                     </button>
                 </form>
                 </div>
-                <button class="hamburger hamburger--vortex is-active small" type="button">
-                    <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                    </span>
-                </button>  
+                <div class="bars" onclick="myFunction(this), openNav()">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+               <!-- <span onclick="openNav()" class="sidenavagation">open</span> <!--side menu target -->
             </header>
         </div>
         <!-- this is where the navagation bar goes -->
@@ -190,9 +200,15 @@
             </nav>
         </div>
         <!-- this is where the body content stars -->
+
         <div id="background">
             <div class="background_image" alt="support for eating disorder img"></div>
             <div class="background-image" alt=" map location"></div>
+            <div class="pink_overlay">
+                <h4 class="head-of-pink_overlap">Find support in your area</h4>
+                <p class="text-of-pink_overlap">HelpFinder is Beat's online directory of eating disorder services, allowing you to search for specialist care in your area.</p>
+                <button class="btn-of-pink_overlap">Search HelpFinder</button>
+            </div>
             <div class="overlay">
                     <a href="" class="over_oragen">
                         <img src="https://www.beateatingdisorders.org.uk/assets/images/circle.png" alt="orange citcle">
@@ -234,10 +250,14 @@
             <div class="background">
             <div class="slick-boxs">
                 <!-- three box's which use slick  -->
-                <div class="slick">
+                <div class="slick-width">
+                        <div class="news">
+                                <p>News</p>
+                            </div>
+                <div class="slick">       
+                                    <!-- first set of slide -->
                     <div>
                         <div style="background-image: url(https://www.beateatingdisorders.org.uk/assets/images/thumbnails/widget_thumb/reasons-to-take-vyz1.jpg);background-position: center;background-size: cover;height: 270px;">
-
                         </div>
                         <div class="bottem_cover">
                                 <h4>New research Shows Eating disorder stereotypes prevent people fr..</h4>
@@ -265,6 +285,12 @@
                     </div>
                     </div>   
                 </div>
+            </div>
+                <!-- second set of slide -->
+                <div class="slick-width">
+                        <div class="Your_storys">
+                                <p>Your Stories</p>
+                            </div>
                 <div class="slick">
                     <div>
                         <div style="background-image: url(https://www.beateatingdisorders.org.uk/assets/images/thumbnails/widget_thumb/im-trans-and-b5Fh.jpg);background-position: center;background-size: cover;height: 270px;"> </div>
@@ -294,6 +320,12 @@
                         </div> 
                     </div>
                 </div>
+            </div>
+                <!-- third set of slide -->
+                <div class="bottem">
+                        <div class="Events">
+                                <p>Events</p>
+                            </div>
                 <div class="slick">
                     <div>
                         <div style="background-image: url(https://www.beateatingdisorders.org.uk/assets/images/thumbnails/widget_thumb/cardiff-half-marathon-Bhru.jpg);background-position: center;background-size: cover;height: 270px"></div>
@@ -319,10 +351,9 @@
                         <button class="btn_info shape">View <i class="fas fa-caret-right"></i></button>
                     </div>
                     </div>
-                    
-                    
-                    
+
                 </div>
+            </div>
             </div>
             </div>
             <!-- info block -->
@@ -369,6 +400,7 @@
                 </div>
             </div>
         </div>
+    </div>
         <!-- this is where the footer starts -->
         <footer class="footer">
             <div class="con_foot">
@@ -379,7 +411,8 @@
                     </p>
                     <button class="btn_2"><p>Sign up <i class="fas fa-caret-right"></i></p></button>
                 </div>
-                <div class="about">
+                <div class="con_foot2">
+                  <div class="about">
                     <h3>
                         About Beat
                     </h3>
@@ -421,20 +454,15 @@
                         <li><a href="#">Sitemap</a></li>
                         <li><a href="#">Website Development by Netmatters</a></li>
                     </ul>
+                </div>  
                 </div>
+                
         </div>
         </footer>
     </div>
     <script type="text/javascript" src="JS/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="JS/slideReveal/dist/jquery.slidereveal.js"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
-    <script>
-            var $hamburger = $(".hamburger");
-            $hamburger.on("click", function(e) {
-              $hamburger.toggleClass("is-active");
-              // Do something else, like open/close menu
-            });
-          </script>
     <script type="text/javascript" src="./JS/index.js"></script>
 </body onload="checkCookie()">
 </html>

@@ -57,11 +57,11 @@ li a{
 
 .over_oragen{
     color: white;
-    position: static;
     top: -62px;
     left: -1200px;
     text-decoration: none;
     position: relative;
+    z-index: -1;
 }
 .about ul li a,
 .trust ul li a,
@@ -99,6 +99,8 @@ li a{
     flex-direction: column;
     width: 60%;
     align-self: center;
+    justify-content: center;
+    margin: auto;
 }
 .searchbar{
    width: 80%;
@@ -122,6 +124,7 @@ li a{
 .fa-life-ring,
 .fa-phone,
 .fa-graduation-cap {
+    display: block;
     background-color: #412148;
     border-radius: 25px;
     color: white;
@@ -131,7 +134,7 @@ li a{
 .nav_bar{
     display: flex;
     justify-content: center;
-    z-index: 5;
+    z-index: 5 !important;
 }
 .nav-bar ~ ul {
     text-transform: uppercase;
@@ -144,11 +147,13 @@ li a{
 ul li ul {
     display: none;
 }
-.newsletter,
+.newsletter{
+    width:25%
+}
 .about,
 .trust,
 .website {
-    width: 25%;
+    width: 33.3%;
 
 }
 .con_foot {
@@ -224,6 +229,7 @@ ul li ul {
     width: 50%;
     height: 415px;
     margin-bottom: 70px;
+    z-index: -2;
 }
 #background {
     display: flex;
@@ -318,13 +324,21 @@ ul li ul {
     border-radius: 50%;
     border: 2px solid white;
 }
-.slick{
-    border: 1px solid black;
+.slick-width{
     width: 33.3%;
     height: 300px;
+    display: block;
+    margin-bottom: 300px;
+}
+.bottem{
+    width: 33.3%;
+    height: 300px;
+    display: block;
+    margin-bottom: 300px;
 }
 .slick-boxs{
     display: flex;
+    flex-wrap: wrap;
 }
 .user-row{
     display: flex;
@@ -354,6 +368,37 @@ ul li ul {
     width: 215px;
     height: 40px;
     border-radius: 25px;
+}
+.head-of-pink_overlap{
+    display: none;
+    position: relative;
+    top: -430px;
+    left: 150px;
+    width: 420px;
+    z-index: 4;
+}
+.text-of-pink_overlap{
+    display: none;
+    position: relative;
+    top: -425px;
+    left: 95px;
+    width: 363px;
+    z-index: 4;
+}
+.btn-of-pink_overlap{
+    display: none;
+    position: relative;
+    top: -215px;
+    left: 155px;
+    background-color: white;
+    color: #972585;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 215px;
+    height: 40px;
+    border-radius: 25px;
+    z-index: 4;
 }
 .btn_info{
     border: none;
@@ -395,6 +440,10 @@ ul li ul {
     width: 1px;
     height: 1px;
 }
+.con_foot2{
+    display: flex;
+    padding-left: 5px;
+}
 
 /* jqueary code */
 #cookie{
@@ -418,6 +467,129 @@ ul li ul {
 .small{
     display: none;
 }
+.pink_overlay{
+    display: none;
+    width: 100%;
+    background-color: rgba(255, 105, 180, 0.4);
+    position: absolute;
+    z-index: 3 !important;
+    top: 298px;
+    height: 366px;
+    z-index: 1;
+}
+.news{
+    background-color: #db092e;
+    width: 45px;
+    position: relative;
+    z-index: 1;
+    top: 45px;
+    left: 296px;
+    color: white;
+}
+.Your_storys{
+    background-color: #412148;
+    width: 95px;
+    position: relative;
+    z-index: 1;
+    top: 45px;
+    left: 245px;
+    color: white;
+}
+.Events{
+    background-color: #ec6708;
+    width: 55px;
+    position: relative;
+    z-index: 1;
+    top: 45px;
+    left: 284px;
+    color: white;
+}
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 4; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+  }
+  /* side bars style. */
+  .bars {
+    display: none;
+    cursor: pointer;
+    position: relative;
+    top: -200px;
+    left: 600px;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  
+  /* hides the side nav button till smaller screen */
+  .sidenavagation{
+      display: none;
+  }
+  @media (max-width: 980px) {
+      .sidenavagation,
+      .bars{
+        display: inline-block;
+      }
+  }
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
 
 /* test code section */
 
@@ -453,7 +625,7 @@ ul li ul {
 
 /* media */
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
     .over_oragen {
         left:-870px;
 
@@ -476,6 +648,7 @@ ul li ul {
     }
     .con_foot{
         width: 80%;
+        flex-direction: column;
     }
     .about,
     .trust,
@@ -483,14 +656,180 @@ ul li ul {
         width: 33.3%
     }
     .newsletter{
-    
+        align-self: flex-start;
+        width:100%;
     }
+    .btn_2{
+        width: none;
+    }
+    .news{
+        left: 250px;
+    }
+    .Your_storys{
+        left: 200px;
+    }
+    .Events{
+        left: 240px;
+    }
+
 }
 @media (max-width: 980px) {
-
+    .over_oragen{
+        display: none;
+    }
+    div[alt=" map location"]{
+        display: none;
+    }
+    .background_image{
+        width: 100%;
+        box-shadow: none;
+    } 
+    .pink_overlay,
+    .head-of-pink_overlap,
+    .text-of-pink_overlap,
+    .btn-of-pink_overlap{
+        display: block;
+    }
+    .head-of-pink_overlap{
+        top: 0;
+        left: 150px;;
+        font-size: 50px;
+        width: 633px;
+    }
+    .text-of-pink_overlap{
+        top:15px;
+        left: 70px;
+        width: 902px;
+    }
+    .btn-of-pink_overlap{
+        top: 154px;
+        left: 344px;
+    }
+    .nav_bar{
+        display: none;
+    }
+    .header_bar{
+        display: block;
+    }
+    .con_foot2{
+        flex-direction: column;
+    }
+    .about,
+    .trust,
+    .website{
+        width: 100%;
+    }
+    .div h3 {
+        text-decoration: underline;
+    }
+    .trust[h3],
+    .website[h3]{
+        text-decoration: underline;
+    }
+    .profile_cover{
+        flex-direction: column;
+    }
+    .user{
+        width: 100%
+    }
+    .user-row {
+        margin-bottom: 30px;
+    }
+    .searchbar_cover{
+        position: relative;
+        bottom: 15px;
+        top: 76px;
+        left: -553px;
+        width: 0;
+    }
+    input[placeholder="Search..."]{
+        width: 571px;
+    }
+    .fa-life-ring,
+    .fa-phone,
+    .fa-graduation-cap {
+        display: none;
+    }
+    .fa-search{
+        position: relative;
+        left: 463px;
+    }
+    .slick-width{
+        flex: 50%;
+    }
+    .bottem{
+        flex: 100%;
+    }
+    .news{
+        left: 295px;
+    }
+    .Your_storys{
+        left: 246px;
+    }
+    .Events{
+        left: 670px;
+    }
 }
 
 @media (max-width: 750px) {
+    .slick-width{
+        flex: 100%;
+    }
+    .text-of-pink_overlap{
+        width: 666px;
+    }
+    .head-of-pink_overlap{
+        left: 57px;
+    }
+    .btn-of-pink_overlap{
+        top: 121px;
+        left: 263px;
+    }
+    .news{
+        left: 508px;
+    }
+    .Your_storys{
+        left: 460px;
+    }
+    .Events{
+        left: 499px;
+    }
+    .user{
+        flex-direction: column;
+        align-items: center;
+    }
+    .helpline,
+    .youthline,
+    .studentline{
+        display: none;
+    }
+    .searchbar_cover{
+        left: -55px;
+    }
+    .header_bar{
+        width: 100%
+    }
+    .fit{
+        padding: 0;
+    }
+    .slick-width{
+        margin-bottom: 220px;
+    }
+    .bars{
+        left: 660px;
+    }
+    .user-row{
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-pic{
+        justify-content: center;
+    }
+    .user a{
+        width: 5px;
+    }
+}
+@media (max-width: 320px){
 
 }
 /*----*/
