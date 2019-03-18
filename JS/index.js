@@ -1,8 +1,9 @@
-
+// scrole bar target
 // below is the code for the side menu
 /* side menu animation*/ 
-function myFunction(x) { 
-  x.classList.toggle("change");
+function myFunction() { 
+  document.getElementById('bars').classList.toggle("change");
+  document.getElementById('by').classList.toggle("stop");
 }
 
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */

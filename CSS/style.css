@@ -1,5 +1,4 @@
 /* mass selects */
-
 body {
     padding-top: 20px;
     font-size: 16px;
@@ -470,7 +469,7 @@ ul li ul {
 .pink_overlay{
     display: none;
     width: 100%;
-    background-color: rgba(255, 105, 180, 0.4);
+    background-color: rgba(255, 105, 180, 0.8);
     position: absolute;
     z-index: 3 !important;
     top: 298px;
@@ -504,7 +503,26 @@ ul li ul {
     left: 284px;
     color: white;
 }
+.purple_btn{
+    color:#972585;
+  }
+  .dark_purple_btn{
+      color: #412148
+  }
+  .red_btn{
+      color: #db092e;
+  }
+  .light_purple_btn{
+      color: #972585;
+  }
+  .origen_btn{
+    color: #ec6708
+  }
 /* The side navigation menu */
+.stop{
+    overflow: hidden
+}
+
 .sidenav {
     height: 100%; /* 100% Full-height */
     width: 0; /* 0 width - change this with JavaScript */
@@ -512,17 +530,20 @@ ul li ul {
     z-index: 4; /* Stay on top */
     top: 0; /* Stay at the top */
     right: 0;
-    background-color: #111; /* Black*/
+    background-color: #412148; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
   }
-  
+  .side_nav{
+      display: flex;
+      flex-direction: column;
+  }
   /* The navigation menu links */
   .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 15px;
     color: #818181;
     display: block;
     transition: 0.3s;
@@ -547,7 +568,7 @@ ul li ul {
     transition: margin-left .5s;
   }
   /* side bars style. */
-  .bars {
+  #bars {
     display: none;
     cursor: pointer;
     position: relative;
@@ -581,7 +602,7 @@ ul li ul {
   }
   @media (max-width: 980px) {
       .sidenavagation,
-      .bars{
+      #bars{
         display: inline-block;
       }
   }
@@ -804,7 +825,8 @@ ul li ul {
         display: none;
     }
     .searchbar_cover{
-        left: -55px;
+        left: -5px;
+        top: 1;
     }
     .header_bar{
         width: 100%
@@ -815,7 +837,7 @@ ul li ul {
     .slick-width{
         margin-bottom: 220px;
     }
-    .bars{
+    #bars{
         left: 660px;
     }
     .user-row{
@@ -824,12 +846,110 @@ ul li ul {
     }
     .profile-pic{
         justify-content: center;
+        position: relative;
+        top: -5px;
+        left: -70px;
     }
     .user a{
         width: 5px;
     }
+    .infodiv{
+        display: none;
+    }
+    .information{
+        width: 100%;
+    }
+    .infodiv2{
+        display: none;
+    }
+    .informations{
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+    .pink_overlay{
+        top: 281px;
+    }
 }
 @media (max-width: 320px){
-
+    .slick-dots{
+        width: 35% !important;
+    }
+    .btn_2{
+        width: 40%;
+    }
+    .container_body{
+        width: 97%;
+    }
+    .fa-search{
+        left: 185px
+    }
+    input[placeholder="Search..."]{
+        width: 290px;
+    }
+    .text-of-pink_overlap{
+        width: 247px;
+    }
+    .head-of-pink_overlap{
+        font-size: 25px;
+        width: 254px;
+    }
+    .btn-of-pink_overlap{
+        left: 75px;
+    }
+    .news{
+        left: 227px;
+    }
+    .Your_storys{
+        left: 180px;
+    }
+    .Events{
+        left: 220px;
+    }
+    .searchbar_cover{
+        left: 10px;
+    }
+    .header_bar{
+        width: 100%
+    }
+    .fit{
+        padding: 0;
+    }
+    .slick-width{
+        margin-bottom: 220px;
+    }
+    #bars{
+        left: 273px;
+    }
+    .user-row{
+        justify-content: center;
+        align-items: center;
+    }
+    .profile-pic{
+        justify-content: center;
+        position: relative;
+        top: -5px;
+        left: -70px;
+    }
+    .user a{
+        width: 5px;
+    }
+    .infodiv{
+        display: none;
+    }
+    .information{
+        width: 100%;
+    }
+    .infodiv2{
+        display: none;
+    }
+    .informations{
+        width: 100%;
+        left: 0;
+        bottom: 0;
+    }
+    .pink_overlay{
+        top: 267px;
+    }
 }
 /*----*/
